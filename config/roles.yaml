@@ -1,0 +1,11 @@
+---
+roles:
+  split_pe_conf:
+    provisioners:
+      - type: pe_bootstrap
+        answer_file: 'answer_files/pe.conf'
+
+  blank_resolve_conf:
+    provisioners:
+      - type: shell
+        inline: "echo 'nameserver 8.8.8.8' > /etc/resolv.conf"
