@@ -57,10 +57,10 @@ vms:
       - 2gb-memory
       - base
 
-#  - name: pe-201621-agent
-#    debug-kit: true
+#  - name: pe-agent
 #    box: puppetlabs/centos-6.6-64-nocm
 #    roles:
+#      - agent
 #      - el-stop-firewall
 #      - el-fix-path
 #      - base

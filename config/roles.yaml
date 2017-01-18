@@ -9,3 +9,9 @@ roles:
     provisioners:
       - type: shell
         inline: "echo 'nameserver 8.8.8.8' > /etc/resolv.conf"
+
+  agent:
+    provisioners:
+      - type: pe_agent
+        #version: '2016.4.2'
+        master_vm: 'split-master'
