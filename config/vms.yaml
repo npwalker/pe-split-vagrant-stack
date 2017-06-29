@@ -18,7 +18,7 @@ vms:
       - pe-memory-tuning2
       - el-stop-firewall
       - el-fix-path
-      - 2gb-memory
+      - medium-size
       - base
 
   - name: pe-postgres-node
@@ -42,7 +42,7 @@ vms:
       - pe-memory-tuning2
       - el-stop-firewall
       - el-fix-path
-      - 2gb-memory
+      - medium-size
       - base
 
   - name: split-puppetdb
