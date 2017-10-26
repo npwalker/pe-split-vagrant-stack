@@ -10,10 +10,10 @@ vms:
   # NOTE: All `box:` declarations in this example point to vagrantcloud.com
   # and require Vagrant 1.5.0 or newer to function.
   - name: split-master
+    hostname: split-master.puppetdebug.vlan
     box: puppetlabs/centos-6.6-64-nocm
     roles:
       - split_pe_conf
-      - blank_resolve_conf
       - pe-forward-console
       - pe-memory-tuning2
       - el-stop-firewall
@@ -22,22 +22,22 @@ vms:
       - base
 
   - name: pe-postgres-node
+    hostname: pe-postgres-node.puppetdebug.vlan
     box: puppetlabs/centos-6.6-64-nocm
     roles:
       - split_pe_conf
-      - blank_resolve_conf
       - pe-forward-console
       - pe-memory-tuning2
       - el-stop-firewall
       - el-fix-path
-      - 2gb-memory
+      - medium-size
       - base
 
   - name: split-console
+    hostname: split-console.puppetdebug.vlan
     box: puppetlabs/centos-6.6-64-nocm
     roles:
       - split_pe_conf
-      - blank_resolve_conf
       - pe-forward-console
       - pe-memory-tuning2
       - el-stop-firewall
@@ -46,15 +46,15 @@ vms:
       - base
 
   - name: split-puppetdb
+    hostname: split-puppetdb.puppetdebug.vlan
     box: puppetlabs/centos-6.6-64-nocm
     roles:
       - split_pe_conf
-      - blank_resolve_conf
       - pe-forward-console
       - pe-memory-tuning2
       - el-stop-firewall
       - el-fix-path
-      - 2gb-memory
+      - medium-size
       - base
 
 #  - name: pe-agent
