@@ -5,6 +5,11 @@ roles:
       - type: pe_bootstrap
         answer_file: 'answer_files/pe.conf'
 
+  pdb_sync_pe_conf:
+    provisioners:
+      - type: pe_bootstrap
+        answer_file: 'answer_files/pdb_sync_pe.conf'
+
   blank_resolve_conf:
     provisioners:
       - type: shell

@@ -57,6 +57,30 @@ vms:
       - medium-size
       - base
 
+#  - name: pdb-sync-pe-postgres-node
+#    hostname: pdb-sync-pe-postgres-node.puppetdebug.vlan
+#    box: puppetlabs/centos-6.6-64-nocm
+#    roles:
+#      - pdb_sync_pe_conf
+#      - pe-forward-console
+#      - pe-memory-tuning2
+#      - el-stop-firewall
+#      - el-fix-path
+#      - medium-size
+#      - base
+
+#  - name: pdb-sync
+#    hostname: pdb-sync.puppetdebug.vlan
+#    box: puppetlabs/centos-6.6-64-nocm
+#    roles:
+#      - pdb_sync_pe_conf
+#      - pe-forward-console
+#      - pe-memory-tuning2
+#      - el-stop-firewall
+#      - el-fix-path
+#      - medium-size
+#      - base
+
 #  - name: pe-agent
 #    box: puppetlabs/centos-6.6-64-nocm
 #    roles:
