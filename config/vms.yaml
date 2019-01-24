@@ -12,6 +12,12 @@ vms:
   - name: split-master
     hostname: split-master.puppetdebug.vlan
     box: puppetlabs/centos-6.6-64-nocm
+    providers:
+      - type: vsphere
+        template_name: 'templates/centos-7-x86_64'
+      - type: openstack
+        volume_boot:
+          image: 'centos_7_x86_64'
     roles:
       - split_pe_conf
       - pe-forward-console
@@ -24,6 +30,12 @@ vms:
   - name: pe-postgres-node
     hostname: pe-postgres-node.puppetdebug.vlan
     box: puppetlabs/centos-6.6-64-nocm
+    providers:
+      - type: vsphere
+        template_name: 'templates/centos-7-x86_64'
+      - type: openstack
+        volume_boot:
+          image: 'centos_7_x86_64'
     roles:
       - split_pe_conf
       - pe-forward-console
@@ -36,6 +48,12 @@ vms:
   - name: split-console
     hostname: split-console.puppetdebug.vlan
     box: puppetlabs/centos-6.6-64-nocm
+    providers:
+      - type: vsphere
+        template_name: 'templates/centos-7-x86_64'
+      - type: openstack
+        volume_boot:
+          image: 'centos_7_x86_64'
     roles:
       - split_pe_conf
       - pe-forward-console
@@ -48,6 +66,12 @@ vms:
   - name: split-puppetdb
     hostname: split-puppetdb.puppetdebug.vlan
     box: puppetlabs/centos-6.6-64-nocm
+    providers:
+      - type: vsphere
+        template_name: 'templates/centos-7-x86_64'
+      - type: openstack
+        volume_boot:
+          image: 'centos_7_x86_64'
     roles:
       - split_pe_conf
       - pe-forward-console
